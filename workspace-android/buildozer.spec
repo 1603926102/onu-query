@@ -4,29 +4,21 @@ title = 未注册光猫查询
 package.name = onuquery
 package.domain = org.onuquery
 
-# 源代码目录（当前目录）
 source.dir = .
-
-# 版本号
 version = 1.0.0
 
 source.include_exts = py,png,jpg,kv
 
-mainmodule = main
+requirements = python3,kivy,requests,pillow
 
-# 只构建 arm64-v8a 架构（避免路径空格问题）
 android.archs = arm64-v8a
-
 android.api = 27
 android.minapi = 21
 
-android.permissions = INTERNET ACCESS_NETWORK_STATE
+android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
 orientation = portrait
-
 android.allow_backup = True
-
-# 自动接受 Android SDK 许可证
 android.accept_sdk_license = True
 
 fullscreen = 0
