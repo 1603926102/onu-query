@@ -18,8 +18,7 @@ jobs:
     - name: Install system dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y openjdk-17-jdk unzip
-        sudo ln -sf /usr/lib/jvm/java-17-openjdk-amd64 /usr/lib/jvm/default-java
+        sudo apt-get install -y openjdk-17-jdk unzip autoconf libtool pkg-config libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev automake
     
     - name: Install buildozer and dependencies
       run: |
@@ -32,6 +31,7 @@ jobs:
         buildozer android debug
       env:
         JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+        BUILDOZER_ANDROID_SDK_ROOT: /home/runner/.buildozer/android/platform/android-sdk
     
     - name: Upload APK
       uses: actions/upload-artifact@v4
