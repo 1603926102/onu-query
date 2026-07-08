@@ -4,6 +4,12 @@ title = 未注册光猫查询
 package.name = onuquery
 package.domain = org.onuquery
 
+# 源代码目录（当前目录）
+source.dir = .
+
+# 版本号
+version = 1.0.0
+
 source.include_exts = py,png,jpg,kv
 
 mainmodule = main
