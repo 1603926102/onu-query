@@ -24,4 +24,7 @@ orientation = portrait
 
 android.allow_backup = True
 
+# 自动接受 Android SDK 许可证
+android.accept_sdk_license = True
+
 fullscreen = 0
