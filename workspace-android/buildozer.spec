@@ -14,7 +14,9 @@ source.include_exts = py,png,jpg,kv
 
 mainmodule = main
 
-android.archs = arm64-v8a armeabi-v7a
+# 只构建 arm64-v8a 架构（避免路径空格问题）
+android.archs = arm64-v8a
+
 android.api = 27
 android.minapi = 21
 
